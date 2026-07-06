@@ -41,6 +41,17 @@ body {
     0% { background-position: 120% 0; }
     100% { background-position: -20% 100%; }
   }
+
+  @keyframes flip {
+    0% {
+      transform: translateY(40px) rotateX(35deg) scale(0.9);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0) rotateX(0) scale(1);
+      opacity: 1;
+    }
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
